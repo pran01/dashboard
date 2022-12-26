@@ -6,11 +6,179 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="./styles/style.css" type="text/css">
     </head>
 
     <body>
+        <!--left fixed navigation section-->
+        <nav>
+            <p>[icon] Dashboard</p>
+            <ul class="navigation-list">
+                <li class="navigation-items active">
+                    Home
+                </li>
+                <li class="navigation-items">
+                    Profile
+                </li>
+                <li class="navigation-items">
+                    Messages
+                </li>
+                <li class="navigation-items">
+                    History
+                </li>
+                <li class="navigation-items">
+                    Tasks
+                </li>
+                <li class="navigation-items">
+                    Communities
+                </li>
+            </ul>
 
+            <ul class="help-list">
+                <li class="help-items">
+                    Settings
+                </li>
+                <li class="help-items">
+                    Support
+                </li>
+                <li class="help-items">
+                    Privacy
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <!-- top-half of the header -->
+            <div class="header-top">
+                [searchicon]
+                <input type="text" />
+                [notificationicon]
+                <img src="" alt="user.jpg" class="profile-photo-corner" />
+                <span class="name-corner"></span>
+            </div>
+
+            <!-- bottom half of the header -->
+            <div class="header-bottom">
+                <img src="" alt="user.jpg" class="profile-photo">
+                <p class="greeting">Hi there,</p>
+                <p class="user-info">
+                    <span class="name">Sethu Ravichandran</span>
+                    <span class="username">(@sethu-che)</span>
+                </p>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <!--section for projects-->
+            <section class="projects">
+                <p class="heading">
+                    Your Projects
+                </p>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <summary class="project-title">Super Cool Project</summary>
+                        <details class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus quidem corporis cum impedit modi fuga consequatur rem, ab non asperiores?
+                        </details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <summary class="project-title">Less Cool Project</summary>
+                        <details class="project-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Distinctio cum aliquam, unde accusamus dolores cumque eaque hic! Quod, quam eos.</details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <summary class="project-title">Impossible App</summary>
+                        <details class="project-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+                            culpa dicta perferendis nulla incidunt doloribus veritatis dolores voluptatem consequatur
+                            praesentium?</details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <summary class="project-title">Easy Peasy App</summary>
+                        <details class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                            harum nostrum ea magni corporis facere doloribus itaque quaerat. Nostrum, iure.</details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <summary class="project-title">Ad Blocker</summary>
+                        <details class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                            odio id quod laborum autem dolore quo repudiandae omnis similique laboriosam!</details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <summary class="project-title">Money Making App</summary>
+                        <details class="project-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+                            dolores eaque culpa deserunt qui corporis quibusdam odio quidem ullam illum.</details>
+                        <div class="icon-group">
+                            <i class="project-actions"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--section for announcements-->
+            <section class="announcements">
+                <p class="heading">Announcements</p>
+                <div class="announcement-card">
+                    <article> class="announcement">
+                        <summary class="announcement-title">
+                            Site Maintenance
+                        </summary>
+                        <details class="announcement-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem?
+                        </details>
+                    </article>>
+                    <hr class="announcement-seperator">
+                    <article> class="announcement">
+                        <summary class="announcement-title">
+                            Community Share Day
+                        </summary>
+                        <details class="announcement-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                            labore?</details>
+                    </article>>
+                    <hr class="announcement-seperator">
+                    <article> class="announcement">
+                        <summary class="announcement-title">
+                            Updated Privacy Policy
+                        </summary>
+                        <details class="announcement-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Est,
+                            quaerat.</details>
+                    </article>>
+                </div>
+            </section>
+
+            <!--section for people-->
+            <section class="people">
+                <p class="heading">People</p>
+                <div class="people-card">
+                    <p class="person"><img src="" alt="" class="people-photo"><span
+                            class="people-username">@Carlo</span></p>
+                    <p class="person"><img src="" alt="" class="people-photo"><span
+                            class="people-username">@Jenny</span></p>
+                    <p class="person"><img src="" alt="" class="people-photo"><span
+                            class="people-username">@Jaswanth</span></p>
+                </div>
+            </section>
+        </main>
     </body>
 
 </html>
