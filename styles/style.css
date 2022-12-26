@@ -6,6 +6,8 @@
   --font-color-active: #bbbbbd;
   --icon-color-active: #f66673;
   --font: "Montserrat", sans-serif;
+  --background-color: #23242b;
+  --border-color: #5d4192;
 }
 
 * {
@@ -15,17 +17,21 @@
   font-family: var(--font);
 }
 
+body {
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
 nav {
   height: 100vh;
   width: 16%;
   padding-top: 1rem;
   background-color: var(--foreground-color);
-  color: var(--font-color);
   position: fixed;
   left: 0;
   font-size: 1rem;
   font-weight: 600;
-  border-right: 1.5px solid var(--font-color-active);
+  border-right: 1.2px solid var(--font-color);
 }
 
 .navigation-title {
@@ -51,6 +57,7 @@ nav {
   height: 2rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navigation-list > .active {
@@ -71,8 +78,240 @@ nav {
   height: 2rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .help-items > i {
   margin-right: 10px;
   margin-left: 1rem;
+}
+
+header {
+  margin-left: 16%;
+  background-color: var(--foreground-color);
+  border-bottom: 1.2px solid var(--font-color);
+  height: 7rem;
+}
+
+.header-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.search-box > input {
+  width: 25rem;
+  margin-left: 1rem;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--font-color);
+  color: var(--font-color-active);
+  padding-inline: 1rem;
+  height: 1.2rem;
+}
+
+.search-box > input:focus {
+  outline: none;
+}
+
+.user-info-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.name-corner {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--font-color-active);
+}
+
+.profile-photo-corner {
+  height: 30px;
+  margin-right: 0.6rem;
+  margin-left: 1rem;
+}
+
+.header-bottom {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greeting-section {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font-color-active);
+  margin-right: 1rem;
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font-color-active);
+}
+
+.profile-photo {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  margin-right: 2rem;
+}
+
+.buttons > button {
+  margin-left: 1rem;
+  border-radius: 40px;
+  height: 2.2rem;
+  width: 80px;
+  background-color: var(--foreground-active);
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+main {
+  margin-left: 16%;
+  background-color: var(--background-color);
+  display: flex;
+}
+
+.projects {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.project-card {
+  background-color: var(--foreground-color);
+  position: relative;
+  width: 20rem;
+  height: 9rem;
+  border-radius: 10px;
+  border-left: 10px solid var(--border-color);
+  padding-inline: 0.5rem;
+  padding-top: 1rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--font-color-active);
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  font-size: 0.75rem;
+}
+
+.icon-group {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-size: 1rem;
+}
+
+.icon-group > i {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font-color-active);
+  margin-bottom: 1rem;
+}
+
+.announcements-people-container {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.announcement {
+  width: 90%;
+}
+
+.announcement-card {
+  background-color: var(--foreground-color);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 19rem;
+  height: 13rem;
+  font-size: 0.7rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.announcement-title {
+  font-weight: 600;
+}
+
+.announcement-seperator {
+  width: 90%;
+  border: 0.1px solid var(--font-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.people {
+  margin-top: 1rem;
+}
+
+.people-card {
+  background-color: var(--foreground-color);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 19rem;
+  height: 11rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.person {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.people-photo {
+  height: 40px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 1rem;
+  margin-right: 1.5rem;
+}
+
+.people-username {
+  font-weight: 600;
+  color: var(--font-color-active);
 }

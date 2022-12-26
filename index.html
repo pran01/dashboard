@@ -56,21 +56,32 @@
         <header>
             <!-- top-half of the header -->
             <div class="header-top">
-                <i class="fa fa-search"></i>
-                <input type="text" />
-                [notificationicon]
-                <img src="" alt="user.jpg" class="profile-photo-corner" />
-                <span class="name-corner"></span>
+                <div class="search-box">
+                    <i class="fa fa-search"></i>
+                    <input type="text" />
+                </div>
+                <div class="user-info-corner">
+                    <i class="fa fa-bell-o"></i>
+                    <img src="./assets/images/profile-pic.png" alt="user.jpg" class="profile-photo-corner" />
+                    <span class="name-corner">Pranav Sinha</span>
+                </div>
             </div>
 
             <!-- bottom half of the header -->
             <div class="header-bottom">
-                <img src="" alt="user.jpg" class="profile-photo">
-                <p class="greeting">Hi there,</p>
-                <p class="user-info">
-                    <span class="name">Sethu Ravichandran</span>
-                    <span class="username">(@sethu-che)</span>
-                </p>
+                <div class="greeting-section">
+                    <div class="image">
+                        <img src="./assets/images/profile-pic.png" alt="user.jpg" class="profile-photo">
+                    </div>
+                    <div class="greeting-container">
+                        <p class="greeting">Hi there,</p>
+                        <p class="user-info">
+                            <span class="name">Pranav Sinha</span>
+                            <span class="username">(@pran01)</span>
+                        </p>
+                    </div>
+                </div>
+
                 <div class="buttons">
                     <button>New</button>
                     <button>Upload</button>
@@ -93,7 +104,9 @@
                             Necessitatibus quidem corporis cum impedit modi fuga consequatur rem, ab non asperiores?
                         </p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                     <div class="project-card">
@@ -101,16 +114,21 @@
                         <p class="project-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Distinctio cum aliquam, unde accusamus dolores cumque eaque hic! Quod, quam eos.</p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                     <div class="project-card">
                         <p class="project-title">Impossible App</p>
                         <p class="project-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
-                            culpa dicta perferendis nulla incidunt doloribus veritatis dolores voluptatem consequatur
+                            culpa dicta perferendis nulla incidunt doloribus veritatis dolores voluptatem
+                            consequatur
                             praesentium?</p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                     <div class="project-card">
@@ -118,7 +136,9 @@
                         <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                             harum nostrum ea magni corporis facere doloribus itaque quaerat. Nostrum, iure.</p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                     <div class="project-card">
@@ -126,7 +146,9 @@
                         <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                             odio id quod laborum autem dolore quo repudiandae omnis similique laboriosam!</p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                     <div class="project-card">
@@ -134,56 +156,59 @@
                         <p class="project-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
                             dolores eaque culpa deserunt qui corporis quibusdam odio quidem ullam illum.</p>
                         <div class="icon-group">
-                            <i class="project-actions"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-code-fork"></i>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="announcements-people-container">
+                <!--section for announcements-->
+                <section class="announcements">
+                    <p class="heading">Announcements</p>
+                    <div class="announcement-card">
+                        <article class="announcement">
+                            <p class="announcement-title">
+                                Site Maintenance
+                            </p>
+                            <p class="announcement-body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem?
+                            </p>
+                        </article>
+                        <hr class="announcement-seperator">
+                        <article class="announcement">
+                            <p class="announcement-title">
+                                Community Share Day
+                            </p>
+                            <p class="announcement-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                                labore?</p>
+                        </article>
+                        <hr class="announcement-seperator">
+                        <article class="announcement">
+                            <p class="announcement-title">
+                                Updated Privacy Policy
+                            </p>
+                            <p class="announcement-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Est,
+                                quaerat.</p>
+                        </article>
+                    </div>
+                </section>
 
-            <!--section for announcements-->
-            <section class="announcements">
-                <p class="heading">Announcements</p>
-                <div class="announcement-card">
-                    <article class="announcement">
-                        <p class="announcement-title">
-                            Site Maintenance
-                        </p>
-                        <p class="announcement-body">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, quidem?
-                        </p>
-                    </article>
-                    <hr class="announcement-seperator">
-                    <article class="announcement">
-                        <p class="announcement-title">
-                            Community Share Day
-                        </p>
-                        <p class="announcement-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-                            labore?</p>
-                    </article>
-                    <hr class="announcement-seperator">
-                    <article class="announcement">
-                        <p class="announcement-title">
-                            Updated Privacy Policy
-                        </p>
-                        <p class="announcement-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Est,
-                            quaerat.</p>
-                    </article>
-                </div>
-            </section>
-
-            <!--section for people-->
-            <section class="people">
-                <p class="heading">People</p>
-                <div class="people-card">
-                    <p class="person"><img src="" alt="" class="people-photo"><span
-                            class="people-username">@Carlo</span></p>
-                    <p class="person"><img src="" alt="" class="people-photo"><span
-                            class="people-username">@Jenny</span></p>
-                    <p class="person"><img src="" alt="" class="people-photo"><span
-                            class="people-username">@Jaswanth</span></p>
-                </div>
-            </section>
+                <!--section for people-->
+                <section class="people">
+                    <p class="heading">People</p>
+                    <div class="people-card">
+                        <p class="person"><img src="assets/images/avatar-01.png" alt="user photo"
+                                class="people-photo"><span class="people-username">@ Carlo</span></p>
+                        <p class="person"><img src="assets/images/avatar-02.png" alt="user photo"
+                                class="people-photo"><span class="people-username">@ Jenny</span></p>
+                        <p class="person"><img src="assets/images/avatar-03.png" alt="user photo"
+                                class="people-photo"><span class="people-username">@ Jaswanth</span></p>
+                    </div>
+                </section>
+            </div>
         </main>
     </body>
 
