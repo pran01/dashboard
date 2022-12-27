@@ -26,7 +26,7 @@ body {
 nav {
   height: 100vh;
   width: var(--nav-size);
-  padding-top: 0.5rem;
+  padding-top: 0.8vw;
   background-color: var(--foreground-color);
   position: fixed;
   left: 0;
@@ -116,7 +116,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 40%;
-  padding-top: 0.5rem;
+  padding-top: 0.8vw;
 }
 
 .search-box {
@@ -172,7 +172,7 @@ header {
 }
 
 .header-bottom {
-  height: 60%;
+  height: 55%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,7 +184,7 @@ header {
   align-items: center;
   height: 100%;
   margin-left: 4%;
-  width: 70%;
+  width: 60%;
 }
 
 .greeting {
@@ -229,7 +229,7 @@ header {
   align-content: space-around;
   align-items: center;
   margin-right: 4%;
-  width: 30%;
+  width: 40%;
 }
 
 .buttons > button {
@@ -241,7 +241,7 @@ header {
   border: 1px solid var(--font-color);
   color: var(--font-color);
   cursor: pointer;
-  font-size: min(3vw, 1rem);
+  font-size: min(2.8vw, 0.8rem);
 }
 
 main {
@@ -249,65 +249,71 @@ main {
   background-color: var(--background-color);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projects {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-left: 4%;
+  margin-top: 3vw;
+  width: max(16rem, 60%);
 }
 
 .project-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-content: space-around;
 }
 
 .project-card {
   background-color: var(--foreground-color);
   overflow: hidden;
   position: relative;
-  width: 20vw;
-  height: 9rem;
+  width: min(16rem, 32vw);
+  height: min(10rem, 24vw);
   border-radius: 10px;
-  border-left: 10px solid var(--border-color);
+  border-left: min(10px, 2vw) solid var(--border-color);
   padding-inline: 0.5rem;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
+  padding-top: 1.5%;
+  margin-bottom: 3vw;
 }
 
 .project-title {
-  font-size: 1rem;
+  font-size: min(1.2rem, 2.5vw);
   font-weight: 600;
   color: var(--font-color-active);
-  margin-bottom: 1rem;
+  margin-bottom: 3%;
 }
 
 .project-details {
-  font-size: 0.75rem;
+  font-size: min(0.75rem, 1.8vw);
 }
 
 .icon-group {
   position: absolute;
-  right: 5%;
-  bottom: 5%;
-  font-size: 1rem;
+  right: 6%;
+  bottom: 6%;
+  font-size: min(1rem, 1.8vw);
 }
 
 .icon-group > i {
-  margin-left: 1rem;
+  margin-left: min(1rem, 1vw);
   cursor: pointer;
 }
 
 .heading {
-  font-size: 1.2rem;
+  font-size: min(3vw, 1.2rem);
   font-weight: 600;
   color: var(--font-color-active);
   margin-bottom: 1rem;
 }
 
 .announcements-people-container {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 4%;
+  margin-top: 3vw;
+  margin-right: 4%;
 }
 
 .announcement {
@@ -318,11 +324,13 @@ main {
   background-color: var(--foreground-color);
   border: 1px solid black;
   border-radius: 10px;
-  width: 19vw;
-  height: 13rem;
-  font-size: 0.7rem;
-  padding-left: 1.5rem;
-  padding-top: 1rem;
+  width: 16rem;
+  height: min(40vw, 20rem);
+  font-size: min(2vw, 0.8rem);
+  padding: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .announcement-title {
@@ -330,7 +338,7 @@ main {
 }
 
 .announcement-seperator {
-  width: 90%;
+  width: 100%;
   border: 0.1px solid var(--font-color);
   margin-top: 5px;
   margin-bottom: 5px;
@@ -342,23 +350,28 @@ main {
 
 .people-card {
   background-color: var(--foreground-color);
+  padding: 5%;
   border: 1px solid black;
   border-radius: 10px;
-  width: 19vw;
-  height: 11rem;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  width: 16rem;
+  height: min(35vw, 11rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
 }
 
 .person {
-  height: 3rem;
+  height: min(8vw, 3rem);
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .people-photo {
-  height: 40px;
+  height: 80%;
   background-color: white;
   border-radius: 40px;
   margin: 1rem;
@@ -366,6 +379,7 @@ main {
 }
 
 .people-username {
+  font-size: min(3vw, 1.2rem);
   font-weight: 600;
   color: var(--font-color-active);
 }
