@@ -37,7 +37,7 @@ nav {
 
 .navigation-title {
   color: var(--font-color-active);
-  font-size: min(2rem, 3vw);
+  font-size: min(1.5rem, 3vw);
   margin-bottom: 2.5rem;
   height: 7vh;
   display: flex;
@@ -58,7 +58,7 @@ nav {
   margin-left: 2vw;
 }
 .navigation-items {
-  font-size: min(1.5rem, 2.3vw);
+  font-size: min(1.2rem, 2.3vw);
   width: 100%;
   height: 2rem;
   display: flex;
@@ -85,7 +85,7 @@ nav {
   margin-top: 8vw;
 }
 .help-items {
-  font-size: min(1.5rem, 2.3vw);
+  font-size: min(1.2rem, 2.3vw);
   width: 100%;
   height: 2rem;
   display: flex;
