@@ -35,6 +35,21 @@ nav {
   border-right: 1.2px solid var(--font-color);
 }
 
+#navbar-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--font-color);
+  outline: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation-title {
   color: var(--font-color-active);
   font-size: min(1.5rem, 3vw);
@@ -159,7 +174,7 @@ header {
 }
 
 .name-corner {
-  font-size: min(0.9em, 2vw);
+  font-size: min(0.9em, 3vw);
   font-weight: 700;
   white-space: nowrap;
   color: var(--font-color-active);
@@ -197,14 +212,14 @@ header {
 }
 
 .name {
-  font-size: min(1.5rem, 3vw);
+  font-size: min(1.5rem, 3.5vw);
   font-weight: 700;
   color: var(--font-color-active);
   margin-right: 2%;
 }
 
 .username {
-  font-size: min(1.5rem, 3vw);
+  font-size: min(1.5rem, 3.5vw);
   font-weight: 700;
   color: var(--font-color-active);
 }
@@ -272,10 +287,14 @@ main {
   width: min(16rem, 32vw);
   height: min(10rem, 24vw);
   border-radius: 10px;
-  border-left: min(10px, 2vw) solid var(--border-color);
+  border-left: min(10px, 3vw) solid var(--border-color);
   padding-inline: 0.5rem;
   padding-top: 1.5%;
   margin-bottom: 3vw;
+}
+
+.hidden {
+  display: none;
 }
 
 .project-title {
@@ -302,7 +321,7 @@ main {
 }
 
 .heading {
-  font-size: min(3vw, 1.2rem);
+  font-size: min(4vw, 1.2rem);
   font-weight: 600;
   color: var(--font-color-active);
   margin-bottom: 1rem;
@@ -326,7 +345,7 @@ main {
   border-radius: 10px;
   width: 16rem;
   height: min(40vw, 20rem);
-  font-size: min(2.3vw, 0.9rem);
+  font-size: min(3.5vw, 0.9rem);
   padding: 8%;
   display: flex;
   flex-direction: column;
@@ -354,7 +373,7 @@ main {
   border: 1px solid black;
   border-radius: 10px;
   width: 16rem;
-  height: min(35vw, 11rem);
+  height: min(45vw, 11rem);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -363,7 +382,7 @@ main {
 }
 
 .person {
-  height: min(8vw, 3rem);
+  height: min(15vw, 3rem);
   width: 100%;
   display: flex;
   align-items: center;
@@ -379,7 +398,82 @@ main {
 }
 
 .people-username {
-  font-size: min(3vw, 1.2rem);
+  font-size: min(4.5vw, 1.2rem);
   font-weight: 600;
   color: var(--font-color-active);
+}
+
+@media only screen and (max-width: 400px) {
+  #navbar-btn {
+    display: flex;
+  }
+  nav {
+    width: 22px;
+  }
+  nav ul {
+    display: none;
+  }
+  .navigation-title {
+    display: none;
+  }
+  header {
+    margin-left: 22px;
+  }
+  main {
+    margin-left: 22px;
+  }
+  .projects {
+    width: 100%;
+    padding-right: 1rem;
+  }
+  .project-card {
+    width: 80vw;
+    height: 40vw;
+    margin-bottom: 5vw;
+    padding-top: 3%;
+    padding-inline: 1rem;
+  }
+  .project-title {
+    font-size: 4vw;
+  }
+  .project-details {
+    font-size: 3.5vw;
+  }
+  .icon-group {
+    font-size: 4vw;
+  }
+  .announcement-card {
+    width: 80vw;
+    height: 70vw;
+    padding: 6%;
+  }
+  .announcement-seperator {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .people-card {
+    width: 80vw;
+  }
+  .open {
+    width: 100%;
+  }
+  .open ul {
+    display: block;
+  }
+  .open ul li {
+    font-size: larger;
+    height: 3rem;
+  }
+  .open ul li i {
+    width: 2rem;
+    margin-left: 2rem;
+  }
+  .open > .navigation-title {
+    display: block;
+    font-size: x-large;
+  }
+  .open > .navigation-title i {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
 }
